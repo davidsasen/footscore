@@ -1,2 +1,2 @@
 # footscore
-Written by David Sastre
+Written by David Sastre (with help of Girish)
