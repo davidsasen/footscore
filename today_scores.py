@@ -1,3 +1,5 @@
+# _*_ coding:utf-8 _*_
+
 import requests
 from datetime import datetime
 import dateutil.parser as date_convert
