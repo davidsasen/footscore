@@ -1,43 +1,43 @@
 print "Grades"
 candela = {
-    "nombre": "Candela",
-    "tareas": [90.0, 97.0, 75.0, 92.0],
-    "pruebas": [88.0, 40.0, 94.0],
-    "examenes": [75.0, 90.0]
+    "name": "Candela",
+    "homework": [90.0, 97.0, 75.0, 92.0],
+    "test": [88.0, 40.0, 94.0],
+    "exam": [75.0, 90.0]
 }
 milagros = {
-    "nombre": "Milagros",
-    "tareas": [100.0, 92.0, 98.0, 100.0],
-    "pruebas": [82.0, 83.0, 91.0],
-    "examenes": [89.0, 97.0]
+    "name": "Milagros",
+    "homework": [100.0, 92.0, 98.0, 100.0],
+    "test": [82.0, 83.0, 91.0],
+    "exam": [89.0, 97.0]
 }
 ramiro = {
-    "nombre": "Ramiro",
-    "tareas": [0.0, 87.0, 75.0, 22.0],
-    "pruebas": [0.0, 75.0, 78.0],
-    "examenes": [100.0, 100.0]
+    "name": "Ramiro",
+    "homework": [0.0, 87.0, 75.0, 22.0],
+    "test": [0.0, 75.0, 78.0],
+    "exam": [100.0, 100.0]
 }
 
-def promedio(numeros):
-    total = sum(numeros)
+def promedio(numbers):
+    total = sum(numbers)
     total = float(total)
-    total = total / len(numeros)
+    total = total / len(numbers)
     return total
     
-def sacar_promedio(alumno):
-    tareas = promedio(alumno["tareas"])
-    pruebas = promedio(alumno["pruebas"])
-    examenes = promedio(alumno["examenes"])
-    return 0.1 * tareas + 0.3 * pruebas + 0.6 * examenes
+def sacar_promedio(pupil):
+    homework = promedio(pupil["homework"])
+    test = promedio(pupil["test"])
+    exam = promedio(pupil["exam"])
+    return 0.1 * homework + 0.3 * test + 0.6 * exam
 
-def calificaciones_con_letras(resultado):
-    if resultado >= 90:
+def calificaciones_con_letras(result):
+    if result >= 90:
         return "A"
-    elif resultado >= 80:
+    elif result >= 80:
         return "B"
-    elif resultado >= 70:
+    elif result >= 70:
         return "C"
-    elif resultado >= 60:
+    elif result >= 60:
         return "D"
     else:
         return "F"
